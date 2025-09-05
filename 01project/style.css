@@ -1,0 +1,27 @@
+.image img{
+    width:500px;
+    height:auto;
+    overflow: hidden;
+    border:5px solid red;
+    border-radius:28px;
+    /* position:absolute; */
+
+}
+body {
+  margin: 0;
+  overflow-x: hidden;  /* horizontal scroll disable */
+  margin-left:180px;
+margin-right:180px;
+}
+.imageDiv img{
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    overflow-x: hidden;  /* horizontal scroll disable */
+    margin-left:20px;
+  margin-right:20px;
+  }
+}
